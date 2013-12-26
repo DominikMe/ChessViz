@@ -1,0 +1,167 @@
+/* HTML Reset*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+/*
+http://colorschemedesigner.com/#3.31Tw0w0w0w0
+*/
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* END HTML Reset*/
+
+body{
+    font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial,sans-serif;
+}
+
+div.board-viz {
+    font-family: Consolas,monospace;
+}
+#board{
+    border-collapse: collapse;
+
+}
+
+#board tr.horizontalLabels td{
+    width:80px;
+    text-align: center;
+}
+
+#board tr.horizontalLabels td.empty{
+    width:10px;
+    text-align: center;
+}
+
+#board tr.boardRow {
+    height:80px;
+
+}
+
+#board tr.boardRow td {
+    vertical-align: middle;
+}
+
+#board td.boardCell{
+
+    background-image: url(img/board.png);
+}
+
+.boardCell div{
+    width: 640px;
+    height: 640px;
+    position: relative;
+}
+
+span.figure{
+    position: absolute;
+    font-size: 60px;
+    text-shadow: #222 2px 2px 2px;
+}
+
+span.col1{
+    left:10px;
+}
+span.col2{
+    left:90px;
+}
+
+span.col3{
+    left:170px;
+}
+span.col4{
+    left:250px;
+}
+
+span.col5{
+    left:330px;
+}
+span.col6{
+    left:410px;
+}
+
+span.col7{
+    left:490px;
+}
+span.col8{
+    left:570px;
+}
+
+span.row1{
+    bottom:10px;
+}
+span.row2{
+    bottom:90px;
+}
+
+span.row3{
+    bottom:170px;
+}
+span.row4{
+    bottom:250px;
+}
+
+span.row5{
+    bottom:330px;
+}
+span.row6{
+    bottom:410px;
+}
+
+span.row7{
+    bottom:490px;
+}
+span.row8{
+    bottom:570px;
+}
+
+.white{
+ color:white;
+}
+
+.black{
+    color:black;
+}
+
+span.figure{
+    font-family: sans-serif;
+}

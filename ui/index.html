@@ -1,9 +1,116 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title></title>
+    <title>Chess Viz</title>
+    <script lang="javascript" src="js/jquery.js"></script>
+    <script lang="javascript" src="js/jquery-ui.js"></script>
+    <link type="text/css" rel="stylesheet" href="style/style.css" />
 </head>
 <body>
 
+    <div class="center">
+        <div class="board-viz">
+            <div>
+                <table id="board">
+                    <tr class="horizontalLabels">
+                        <td class="empty">&nbsp;</td>
+                        <td>a</td>
+                        <td>b</td>
+                        <td>c</td>
+                        <td>d</td>
+                        <td>e</td>
+                        <td>f</td>
+                        <td>g</td>
+                        <td>h</td>
+                        <td class="empty">&nbsp;</td>
+                    </tr>
+                    <tr class="boardRow">
+                        <td>8</td>
+                        <td colspan="8" rowspan="8" class="boardCell">
+                            <div>
+                                <span class="figure row2 col1 white" id="1">&#9823;</span>
+                                <span class="figure row2 col2 white" id="2">&#9823;</span>
+                                <span class="figure row2 col3 white" id="3">&#9823;</span>
+                                <span class="figure row2 col4 white" id="4">&#9823;</span>
+                                <span class="figure row2 col5 white" id="5">&#9823;</span>
+                                <span class="figure row2 col6 white" id="6">&#9823;</span>
+                                <span class="figure row2 col7 white" id="7">&#9823;</span>
+                                <span class="figure row2 col8 white" id="8">&#9823;</span>
+
+                                <span class="figure row1 col1 white" id="9">&#9820;</span>
+                                <span class="figure row1 col2 white" id="10">&#9822;</span>
+                                <span class="figure row1 col3 white" id="11">&#9821;</span>
+                                <span class="figure row1 col4 white" id="12">&#9819;</span>
+                                <span class="figure row1 col5 white" id="13">&#9818;</span>
+                                <span class="figure row1 col6 white" id="14">&#9821;</span>
+                                <span class="figure row1 col7 white" id="15">&#9822;</span>
+                                <span class="figure row1 col8 white" id="16">&#9820;</span>
+
+
+                                <span class="figure row7 col1 black" id="17">&#9823;</span>
+                                <span class="figure row7 col2 black" id="18">&#9823;</span>
+                                <span class="figure row7 col3 black" id="19">&#9823;</span>
+                                <span class="figure row5 col4 black" id="20">&#9823;</span>
+                                <span class="figure row7 col5 black" id="21">&#9823;</span>
+                                <span class="figure row7 col6 black" id="22">&#9823;</span>
+                                <span class="figure row7 col7 black" id="23">&#9823;</span>
+                                <span class="figure row7 col8 black" id="24">&#9823;</span>
+
+                                <span class="figure row8 col1 black" id="25">&#9820;</span>
+                                <span class="figure row8 col2 black" id="26">&#9822;</span>
+                                <span class="figure row8 col3 black" id="27">&#9821;</span>
+                                <span class="figure row8 col4 black" id="28">&#9819;</span>
+                                <span class="figure row8 col5 black" id="29">&#9818;</span>
+                                <span class="figure row8 col6 black" id="30">&#9821;</span>
+                                <span class="figure row8 col7 black" id="31">&#9822;</span>
+                                <span class="figure row8 col8 black" id="32">&#9820;</span>
+                            </div>
+                        </td>
+                        <td>8</td>
+                    </tr>
+                    <tr class="boardRow">
+                        <td>7</td>
+                        <td>7</td>
+                    </tr>
+                    <tr class="boardRow">
+                        <td>6</td>
+                        <td>6</td>
+                    </tr>
+                    <tr class="boardRow">
+                        <td>5</td>
+                        <td>5</td>
+                    </tr>
+                    <tr class="boardRow">
+                        <td>4</td>
+                        <td>4</td>
+                    </tr>
+                    <tr class="boardRow">
+                        <td>3</td>
+                        <td>3</td>
+                    </tr>
+                    <tr class="boardRow">
+                        <td>2</td>
+                        <td>2</td>
+                    </tr>
+                    <tr class="boardRow">
+                        <td>1</td>
+                        <td>1</td>
+                    </tr>
+                    <tr class="horizontalLabels">
+                        <td class="empty">&nbsp;</td>
+                        <td>a</td>
+                        <td>b</td>
+                        <td>c</td>
+                        <td>d</td>
+                        <td>e</td>
+                        <td>f</td>
+                        <td>g</td>
+                        <td>h</td>
+                        <td class="empty">&nbsp;</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
