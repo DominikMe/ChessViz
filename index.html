@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chess Viz</title>
+    <script lang="javascript" src="ui/js/jquery.js"></script>
+    <script lang="javascript" src="ui/js/jquery-ui.js"></script>
+	<script lang="javascript" src="model/js/chess-model.js"></script>
+    <link type="text/css" rel="stylesheet" href="ui/style/style.css" />
+	
+	<script lang="javascript">
+		figure2ascii = { pawn: '&#9823;', rook: '&#9820;', knight: '&#9822;', bishop: '&#9821;', king: '&#9818;', queen: '&#9819;'};
+		m = new ChessModel();		
+		
+	
+		drawState = function (state) {
+			var boardCell = $('.boardCell');
+			boardCell.html('');
+			var content = '<div>';
+			for(i = 0; i < state.length; i++) {
+				var figure = state[i];
+				content += '<span class="figure row' + figure.row + ' col' + figure.column + ' ' + figure.color;
+				content += ' id="1">' + figure2ascii[figure.type] + '</span>';
+			}
+			content += '</div>';
+			boardCell.html(content);
+		}
+		
+		$(document).ready(drawState([]));
+	</script>
+</head>
+<body>
+
+    <div class="center">
+		<button type="button" onclick="m.move(m.state[2],4,3);drawState(m.state)">Start!</button>
+        <div class="board-viz">
+            <div>
+                <table id="board">
+                    <tr class="horizontalLabels">
+                        <td class="empty">&nbsp;</td>
+                        <td>a</td>
+                        <td>b</td>
+                        <td>c</td>
+                        <td>d</td>
+                        <td>e</td>
+                        <td>f</td>
+                        <td>g</td>
+                        <td>h</td>
+                        <td class="empty">&nbsp;</td>
+                    </tr>
+                    <tr class="boardRow">
+                        <td>8</td>
+                        <td colspan="8" rowspan="8" class="boardCell">
+                            <div>                                
+                            </div>
+                        </td>
+                        <td>8</td>
+                    </tr>
+                    <tr class="boardRow">
+                        <td>7</td>
+                        <td>7</td>
+                    </tr>
+                    <tr class="boardRow">
+                        <td>6</td>
+                        <td>6</td>
+                    </tr>
+                    <tr class="boardRow">
+                        <td>5</td>
+                        <td>5</td>
+                    </tr>
+                    <tr class="boardRow">
+                        <td>4</td>
+                        <td>4</td>
+                    </tr>
+                    <tr class="boardRow">
+                        <td>3</td>
+                        <td>3</td>
+                    </tr>
+                    <tr class="boardRow">
+                        <td>2</td>
+                        <td>2</td>
+                    </tr>
+                    <tr class="boardRow">
+                        <td>1</td>
+                        <td>1</td>
+                    </tr>
+                    <tr class="horizontalLabels">
+                        <td class="empty">&nbsp;</td>
+                        <td>a</td>
+                        <td>b</td>
+                        <td>c</td>
+                        <td>d</td>
+                        <td>e</td>
+                        <td>f</td>
+                        <td>g</td>
+                        <td>h</td>
+                        <td class="empty">&nbsp;</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
